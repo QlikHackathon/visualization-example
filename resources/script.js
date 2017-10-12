@@ -1,13 +1,14 @@
 // Input your config
-var config = {}
+var config = {
+  host: 'playground.qlik.com',
+  prefix: '/showcase/',
+  port: '443',
+  isSecure: true,
+  rejectUnauthorized: false,
+  appname: '0b0fc6d5-05ce-44d7-95aa-80d0680b3559'
+}
 
 var app
-var alteredState = 'SecondState'
-var selectionField = 'Recorded Class'
-
-function authenticate () {
-  Playground.authenticate(config)
-}
 
 function main () {
   require.config({
